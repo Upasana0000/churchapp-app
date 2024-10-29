@@ -1,23 +1,38 @@
 .main-content {
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #555;
-  }
-  
-  /* Styles for the added image */
-  .logo{
-    width: 100%;          /* Makes the image span the full width of its container */
-    height: auto;         /* Keeps the aspect ratio intact */
-    margin-bottom: 16px;  /* Adds some space below the image */
-    border-radius: 8px;   /* Optional: Rounds the corners slightly */
-  }
-  
+  padding: 16px;
+}
+
+.community-image {
+  max-width: 100%;            /* Ensures the image is responsive */
+  height: auto;               /* Maintains the aspect ratio */
+  margin: 20px auto;          /* Centers the image and adds spacing */
+  border-radius: 12px;        /* Adds rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  border: 2px solid #e0e0e0;  /* Adds a light border */
+  transition: transform 0.3s ease-in-out;  /* Smooth scaling effect on hover */
+}
+
+.community-image:hover {
+  transform: scale(1.05);     /* Scales the image slightly on hover for emphasis */
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+ion-button {
+  margin-top: 20px;           /* Adds space between the button and the preceding elements */
+  --border-radius: 8px;       /* Rounds the button corners for consistency with the overall design */
+}

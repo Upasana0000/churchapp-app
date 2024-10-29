@@ -1,13 +1,71 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Our</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Values</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <!-- Collapsed header when scrolling -->
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Our</ion-title>
+      <ion-title size="large">Values</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <!-- Main content area with sections wrapped in boxes -->
+  <div class="main-content ion-padding">
+
+    
+    <!-- Vision and Mission Introduction -->
+    <div class="box">
+      <h2>Vision and Mission</h2>
+      <div class="logo">
+        <img src="assets/images/9.JPG" alt="logo" >
+      </div> 
+      <p>
+        But the hour cometh, and now is, when the true worshippers shall worship the Father in spirit and in truth:
+        for the Father seeketh such to worship him. God is a Spirit: and they that worship him must worship him 
+        in spirit and in truth.
+      </p>
+    </div>
+
+    <!-- Vision Section -->
+    <div class="box">
+      <h3>Vision</h3>
+      <p>
+        The whole church taking the whole gospel to the whole world.
+      </p>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="box">
+      <h3>Mission</h3>
+      <p>
+        The true worshipers shall go and make disciples according to Matthew 28:18-20; Acts 1:8; Mark 16:15-16.
+        To fulfill the great commandment and the great commission according to the great plan.
+      </p>
+    </div>
+
+    <!-- Church Sacraments Section -->
+    <div class="box">
+      <h3>Church Sacraments</h3>
+      <p>
+        The true worshipers Community celebrates water baptism by immersion and holy communion as the sacraments of the church
+        as commended by Jesus Christ.
+      </p>
+    </div>
+
+    <!-- Church Special Days Section -->
+    <div class="box">
+      <h3>Church Special Days</h3>
+      <p>
+        Sunday is a day for worship and rest for the True worshipers, except for essential services. Work is prohibited
+        for all true worshiper's members on this day. A special day shall be a day of prayer and giving for a specific
+        ministry of the church.
+      </p>
+    </div>
+  </div>
 </ion-content>

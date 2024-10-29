@@ -1,13 +1,57 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>contactus</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contact Us</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <!-- Collapsed header when scrolling -->
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">contactus</ion-title>
+      <ion-title size="large">Contact Us</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <!-- Main content area -->
+  <div class="main-content ion-padding">
+    <div class="box">
+      <h2>Contact Us</h2>
+
+      <!-- Contact Details Section -->
+      <div class="contact-details">
+        <p class="office-title"><strong>Anglicare NT Head Office</strong></p>
+        <p class="address">
+          60 Winnellie Rd, Winnellie, Northern Territory, Australia<br>
+          Postal: PO Box 36506, Winnellie NT 0821
+        </p>
+        <p class="contact-info">
+          <strong>Phone:</strong> 08 8985 0000<br>
+          <strong>Fax:</strong> 08 8985 0001<br>
+          <strong>Email:</strong> <a href="mailto:anglicare&#64;anglicare-nt.org.au">anglicare&#64;anglicare-nt.org.au</a><br>
+          <strong>Office Hours:</strong> 8.30am - 4.30pm, Monday to Friday
+        </p>
+      </div>
+
+      <!-- Map Section -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2028390231823!2d130.880315176984!3d-12.418612385748507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc140abca3a16d9%3A0x5d654f57482d15b4!2s60%20Winnellie%20Rd%2C%20Winnellie%20NT%200820%2C%20Australia!5e0!3m2!1sen!2sus!4v1694459286732!5m2!1sen!2sus"
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Acknowledgment Section -->
+      <div class="acknowledgment">
+        <p><strong>Find us here.</strong></p>
+      </div>
+    </div>
+  </div>
 </ion-content>

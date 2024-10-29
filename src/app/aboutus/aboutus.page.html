@@ -1,13 +1,81 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>aboutus</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>About Us</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <!-- Collapsed header when scrolling -->
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">aboutus</ion-title>
+      <ion-title size="large">About Us</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <!-- Main content area with sections wrapped in boxes -->
+  <div class="main-content ion-padding">
+
+    <!-- Introduction Section -->
+    <div class="box">
+      <h2>Who We Are</h2>
+      <p>
+        Anglicare NT is a faith-informed agency, proud of its traditions as an NGO (non-government organisation) and a long-term
+        territory based community service organisation that continues to adapt and respond to the needs of our communities.
+      </p>
+      <p>
+        Anglicare NT was formed by the Anglican Church in the Northern Territory in response to identified community social needs.
+        From the beginning, services have embraced all Territorians; no one is denied the respect, justice, and community of our work.
+        Similarly, our staff reflect the full diversity of our community.
+      </p>
+    </div>
+
+    <!-- Equal Opportunity Section -->
+    <div class="box">
+      <h3>Equal Opportunity Employer</h3>
+      <p>
+        Anglicare NT is an equal opportunity employer, ensuring a workplace free from discrimination on the basis of gender, 
+        sexuality, age, disability, religion, or race.
+      </p>
+    </div>
+
+    <!-- Our Values Section -->
+    <div class="box">
+      <h3>Our Values</h3>
+      <p>
+        Our values of respect, kindness, hope, fairness, and integrity, as well as many other life-affirming values are expressed 
+        in many religious traditions and philosophies. In seeking to live and strengthen our values at Anglicare NT we will reference 
+        Christian thought and draw on the resources of the Anglican Church. All staff who agree to work at Anglicare NT are asked to 
+        respect the Christian foundation and values of Anglicare NT.
+      </p>
+    </div>
+
+    <!-- Foundations Section -->
+    <div class="box">
+      <h3>Our Foundations</h3>
+      <p>
+        Anglicare NT is a local organisation providing responsive services and targeted advocacy for the people of the Northern 
+        Territory and their diverse communities. We are a separately incorporated agency of the Anglican Diocese of the NT.
+      </p>
+      <p>
+        Jesus said, “I have come that you may have life, and have it in all its fullness” (John 10:10).
+      </p>
+      <p>
+        We acknowledge and celebrate the Traditional Custodians and Owners of this country and we pay our respects to Elders past 
+        and present.
+      </p>
+    </div>
+
+    <!-- Image Section Placeholder -->
+    <div class="box image-box">
+      <h3>Gallery</h3>
+      <img src="assets/images/2.JPG" alt="About Us Image" class="aboutus-image">
+      <p class="caption">
+        <img src="assets/images/1.JPG" alt="About Us Image" class="aboutus-image">
+      <p class="caption">
+    </div>
+  </div>
 </ion-content>
+

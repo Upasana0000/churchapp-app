@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'home',
@@ -39,6 +39,10 @@ const routes: Routes = [
   {
     path: 'contactus',
     loadChildren: () => import('./contactus/contactus/contactus.module').then( m => m.ContactusPageModule)
+  },
+  {
+    path: 'newsletter',
+    loadChildren: () => import('./newsletter/newsletter/newsletter.module').then( m => m.NewsletterPageModule)
   }
 ];
 

@@ -1,0 +1,32 @@
+.main-content {
+  padding: 16px;
+}
+
+.disciple-image {
+  max-width: 100%;            /* Ensures the image is responsive and fits well */
+  height: auto;               /* Maintains the aspect ratio */
+  margin: 20px auto;          /* Centers the image within the content and adds spacing */
+  border-radius: 12px;        /* Adds rounded corners to the image */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a floating effect */
+  border: 2px solid #e0e0e0;  /* Adds a light border around the image */
+  transition: transform 0.3s ease-in-out;  /* Adds a smooth scaling effect when hovered */
+}
+
+.disciple-image:hover {
+  transform: scale(1.05);     /* Scales the image slightly on hover for a subtle zoom effect */
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 16px;
+}

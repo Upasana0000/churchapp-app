@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/home', icon: 'home' }, // Add Home page here
-    { title: 'About us', url: '/folder/aboutUs', icon: 'heart' },
-    { title: 'Vission and Mission', url: '/folder/Ourvissionandmissions', icon: 'book' },
-    { title: 'Core Values', url: '/folder/values', icon: 'book' },
-    { title: 'Disciples', url: '/folder/desciples', icon: 'people' },
-    { title: 'Community Life', url: '/folder/community', icon: 'people' },
-    { title: 'Contact us', url: '/folder/contactus', icon: 'mail' },
+    { title: 'About us', url: '/aboutus', icon: 'heart' },
+    { title: 'Core Values', url: '/values', icon: 'book' },
+    { title: 'Disciples', url: '/desciples', icon: 'people' },
+    { title: 'Community Life', url: '/community', icon: 'people' },
+    { title: 'Newsletter', url: '/newsletter', icon: 'mail' },
+    { title: 'Contact us', url: '/contactus', icon: 'location' },
   ];
 
   public labels = [];
