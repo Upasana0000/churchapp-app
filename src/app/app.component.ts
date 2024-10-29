@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -6,13 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    { title: 'Home', url: '/home', icon: 'home' }, // Add Home page here
+    { title: 'About us', url: '/folder/aboutUs', icon: 'heart' },
+    { title: 'Vission and Mission', url: '/folder/Ourvissionandmissions', icon: 'book' },
+    { title: 'Core Values', url: '/folder/values', icon: 'book' },
+    { title: 'Disciples', url: '/folder/desciples', icon: 'people' },
+    { title: 'Community Life', url: '/folder/community', icon: 'people' },
+    { title: 'Contact us', url: '/folder/contactus', icon: 'mail' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
+  public labels = [];
+
   constructor() {}
 }
+

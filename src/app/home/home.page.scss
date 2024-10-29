@@ -1,0 +1,23 @@
+.main-content {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Styles for the added image */
+  .logo{
+    width: 100%;          /* Makes the image span the full width of its container */
+    height: auto;         /* Keeps the aspect ratio intact */
+    margin-bottom: 16px;  /* Adds some space below the image */
+    border-radius: 8px;   /* Optional: Rounds the corners slightly */
+  }
+  

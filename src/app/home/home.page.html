@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>The Anglicare Church</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">The Anglicare Church</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ <!-- Main content area -->
+ <div class="main-content ion-padding">
+  <h2>Welcome to our App!</h2>
+  <p>Welcome to Anglicare Church.
+     We're so glad you're here. Our app is designed to keep you connected, inspired, and informed about all that's happening within our community. Whether you're looking to join a group, explore upcoming events, or find resources to deepen your faith, this app has everything you need. Thank you for being part of our family, and we look forward to growing together in faith and fellowship</p>
+     
+     <!-- Adding another image, such as a community event photo -->
+    <div class="logo">
+      <img src="assets/images/5.JPG" alt="logo" >
+    </div> 
+
+  <!-- A button to navigate to a feature page or other part of the app -->
+  <ion-button expand="full" color="primary" (click)="navigateToFeature()">
+    Explore Features
+  </ion-button>
+</div>
+</ion-content>
