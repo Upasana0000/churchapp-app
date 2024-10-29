@@ -1,0 +1,7 @@
+{
+  "name": "churchapp-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
