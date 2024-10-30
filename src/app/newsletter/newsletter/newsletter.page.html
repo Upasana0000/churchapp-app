@@ -1,13 +1,46 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>newsletter</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Newsletter</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <!-- Collapsed header when scrolling -->
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">newsletter</ion-title>
+      <ion-title size="large">Newsletter</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <!-- Subscription Form -->
+  <div class="newsletter-container ion-padding">
+    <h2>Subscribe to our Newsletter</h2>
+    <form (ngSubmit)="subscribeToNewsletter()" #newsletterForm="ngForm">
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="subscriberName" name="name" required autocomplete="name"></ion-input>
+        <div class="warning-message" *ngIf="newsletterForm.submitted && !subscriberName">
+          Name is required
+        </div>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="subscriberEmail" name="email" required autocomplete="email"></ion-input>
+        <div class="warning-message" *ngIf="newsletterForm.submitted && !subscriberEmail">
+          A valid email is required
+        </div>
+      </ion-item>
+      <ion-button expand="full" type="submit" color="primary" [disabled]="!newsletterForm.valid">
+        Subscribe
+      </ion-button>
+    </form>
+
+    <!-- Thank You Message -->
+    <div class="thank-you-message" *ngIf="showThankYou">
+      <h3>Thank you for subscribing to our newsletter!</h3>
+    </div>
+  </div>
 </ion-content>

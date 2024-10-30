@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Events</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Main content area -->
+  <div class="events-container ion-padding">
+    <h2>Upcoming Events</h2>
+    <div *ngFor="let event of events" class="event-box">
+      <div class="event-title">
+        <h3>{{ event.title }}</h3>
+      </div>
+      <div class="event-description">
+        <p>{{ event.description }}</p>
+      </div>
+      <div class="event-date">
+        <p><strong>Date:</strong> {{ event.date | date: 'fullDate' }}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

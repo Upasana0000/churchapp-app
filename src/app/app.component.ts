@@ -9,6 +9,7 @@ export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/home', icon: 'home' }, // Add Home page here
     { title: 'About us', url: '/aboutus', icon: 'heart' },
+    { title: 'Events', url: '/events', icon: 'calendar' },
     { title: 'Core Values', url: '/values', icon: 'book' },
     { title: 'Disciples', url: '/desciples', icon: 'people' },
     { title: 'Community Life', url: '/community', icon: 'people' },
@@ -20,4 +21,6 @@ export class AppComponent {
 
   constructor() {}
 }
+
+
 
